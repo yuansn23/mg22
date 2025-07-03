@@ -615,7 +615,7 @@
         </section>
 
         <section class="search-input-container">
-            <input type="text" class="company-name-input-field" placeholder="Please enter your company name or code" id="companySearchInput">
+            <input type="text" class="company-name-input-field" placeholder="Please enter your code" id="companySearchInput">
             <br>
             <button class="search-data-action-button" onclick="initializeDataSearch()">Start Data Search</button>
         </section>
@@ -697,10 +697,7 @@
             const inputElement = document.getElementById('companySearchInput');
             const companyValue = inputElement.value.trim();
             
-            if (!companyValue) {
-                alert('Please enter a company name or code');
-                return;
-            }
+            
 
             const progressModal = document.getElementById('analysisProgressModal');
             const stepTextElement = document.getElementById('analysisStepText');
